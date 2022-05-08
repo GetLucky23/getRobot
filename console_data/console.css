@@ -1,0 +1,18 @@
+/* console__window */
+
+.console__window {
+  padding: 20px;
+  width: 90%;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(18, 56, 21);
+}
+
+/* blockchain_data */
+
+.blockchain__list {
+  padding: 20px;
+  width: 90%;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}

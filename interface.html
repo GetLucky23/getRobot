@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot test</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="./console_data/console.css">
+  <!-- scripts -->
+  <script src="./robot.js"></script>
+  <script src="./console_data/console.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>Robot testing interface</h1>
+
+    <h2>Key points</h2>
+    <ul>
+      <li>to use project - copy repository:<br>
+        <a href="https://github.com/GetLucky23/getRobot">
+          https://github.com/GetLucky23/getRobot.git
+        </a> ;
+      </li>
+      <li>
+        type commands inside of robot.js file -> see output in browser console (of interface.html);
+      </li>
+      <li> 
+        by default - you use created robot named
+          <code>'lucky'</code> 
+      </li>
+      <li>use <code>console.log(lucky)</code> to see it</li>
+      <li>
+        to create new robot use command: <br>
+        <code>const robot = new Robot('robot_name')</code>
+      </li>
+      <li>robot is an object</li>
+      <li>
+        to use robot functions - call robot's methods
+        <code>robot_name.method()</code>
+        and watch result in output console
+      </li>
+    </ul>
+
+    <h2>Robot's commands</h2>
+    <ol>
+      <h4>// main core methods</h4>
+      <li><code>getMainInfo()</code></li>
+      <li><code>getAdditionalInfo()</code></li>
+      <li><code>getGreeting()</code></li>
+      <li><code>updateRobot(updateVersion)</code></li>
+      <li><code>updateRobot(updateVersion)</code></li>
+
+      <h4>// commands menu</h4>
+      <li>
+        <code>addCommand('command_name', function())</code> <br>
+        - use camelcase for 'command_name' <br>
+        - function() is what your command does <br>
+        - use word `this` to point on your robot
+      </li>
+      <li><code>deleteCommand('command_name')</code></li>
+      <li><code>editCommand('command_name', function())</code></li>
+
+      <h4>// navigation methods</h4>
+      <li><code>getCoords() </code></li>
+      <li><code>setTargetCoords(x, y)</code></li>
+      <li><code>getTargetCoords()</code></li>
+
+      <h4>// movement control methods</h4>
+      <li><code>moveForward()</code></li>
+      <li><code>moveBack()</code></li>
+      <li><code>moveLeft()</code></li>
+      <li><code>moveRight()</code></li>
+    </ol>
+
+  <!--   <h2>Robot console output</h3>
+
+    <div class="console__window">
+      <pre id="log">*console*</pre>
+    </div> -->
+  </main>
+</body>
+</html>
